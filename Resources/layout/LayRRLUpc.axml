@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FlyOutContent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="#333333" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1"
+        android:background="#333333">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textColor="#fff6f6f6"
+                android:layout_marginLeft="8dp"
+                android:text="Return To Warehouse &gt; UPC Details" />
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:id="@+id/view2"
+        android:layout_margin="4dp" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/TableLayout1">
+        <TableRow>
+            <Button
+                android:text="DONE"
+                android:id="@+id/btnDone"
+                android:textSize="18dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="@drawable/ButtonStyle"
+                android:layout_width="142.5dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5.0dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/TableLayout2">
+        <TableRow>
+            <TextView
+                android:id="@+id/lblPO"
+                android:text="MTS # : "
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtponum"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/EditTextStyle"
+                android:editable="false"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/lblLot"
+                android:text="Location : "
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtdivision"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/EditTextStyle"
+                android:editable="false"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="2dp">
+            <TextView
+                android:id="@+id/lblSKU"
+                android:text="UPC : "
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtupc"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/EditTextStyle"
+                android:editable="false"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="2dp"
+            android:id="@+id/tableRow2">
+            <TextView
+                android:id="@+id/lblDescription"
+                android:text="Description : "
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtdescription"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/EditTextStyle"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="2dp"
+            android:id="@+id/tableRow3">
+            <TextView
+                android:id="@+id/lblQty"
+                android:text="Qty : "
+                android:textSize="18sp"
+                android:textColor="#ff807979"
+                android:textStyle="normal"
+                android:layout_width="fill_parent"
+                android:layout_height="39.0dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/txtqty"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/editabletextstyle"
+                android:editable="false"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/TableLayout4">
+        <TableRow
+            android:id="@+id/tableRow4">
+            <Buttons
+                android:text="UNLOAD"
+                android:id="@+id/btnUnload"
+                android:textSize="18dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="@drawable/ButtonStyle"
+                android:layout_width="142.5dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5.0dp" />
+            <Button xmlns:tools="http://schemas.android.com/tools"
+                android:text="DEDUCT QTY"
+                android:id="@+id/btnqtyminus"
+                android:textSize="18dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:background="@drawable/ButtonStyle"
+                android:layout_width="140.5dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5.0dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

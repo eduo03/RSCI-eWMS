@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{40E2C60D-F1FB-44EA-A8EA-A3C1C3F4DC03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Debenhams</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Debenhams</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\table.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="DataAccess\IItemRepository.cs" />
+    <Compile Include="DataAccess\OrmItemRepository.cs" />
+    <Compile Include="DataAccess\SQLiteHelper.cs" />
+    <Compile Include="DataAccess\WMSApplication.cs" />
+    <Compile Include="DataAccess\WMSDatabase.cs" />
+    <Compile Include="Adapter\AdpRPoList.cs" />
+    <Compile Include="Activities\ActRPoList.cs" />
+    <Compile Include="Adapter\AdpRPoListScan.cs" />
+    <Compile Include="Activities\ActRPoUpc.cs" />
+    <Compile Include="Activities\ActStart.cs" />
+    <Compile Include="Activities\ActLogin.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Activities\ActLeftDrawer.cs" />
+    <Compile Include="Activities\ActRPoScanList.cs" />
+    <Compile Include="ApiConnection\ApiConnection.cs" />
+    <Compile Include="DataAccess\ItemRepository.cs" />
+    <Compile Include="Activities\ActPTLList.cs" />
+    <Compile Include="Adapter\AdpPTLList.cs" />
+    <Compile Include="Activities\ActPTLScanList.cs" />
+    <Compile Include="Adapter\AdpPTLListScanList.cs" />
+    <Compile Include="Activities\ActPTLUpc.cs" />
+    <Compile Include="Adapter\AdpLBList.cs" />
+    <Compile Include="Activities\ActLBList.cs" />
+    <Compile Include="Activities\ActLBStoreList.cs" />
+    <Compile Include="Adapter\AdpLBListDetail.cs" />
+    <Compile Include="Activities\ActLBStoreListBox.cs" />
+    <Compile Include="Adapter\AdpLBListDetailScan.cs" />
+    <Compile Include="Activities\ActRSTList.cs" />
+    <Compile Include="Adapter\AdpRStList.cs" />
+    <Compile Include="DataAccess\DBConnection.cs" />
+    <Compile Include="Activities\ActRSTListDetail.cs" />
+    <Compile Include="Adapter\AdpRStListDetail.cs" />
+    <Compile Include="Activities\ActRSTListDetailUpc.cs" />
+    <Compile Include="Activities\ActPTLBox.cs" />
+    <Compile Include="Activities\ActPSTBox.cs" />
+    <Compile Include="Activities\ActPSTList.cs" />
+    <Compile Include="Activities\ActPSTListDetail.cs" />
+    <Compile Include="Activities\ActPSTUpc.cs" />
+    <Compile Include="Adapter\AdpPStList.cs" />
+    <Compile Include="Adapter\AdpPSTListDetail.cs" />
+    <Compile Include="Activities\ActRRLList.cs" />
+    <Compile Include="Adapter\AdpRRLList.cs" />
+    <Compile Include="Activities\ActRRLListDetail.cs" />
+    <Compile Include="Adapter\AdpRRLListDetail.cs" />
+    <Compile Include="Activities\ActRRLListDetailUpc.cs" />
+    <Compile Include="Adapter\AdpPRLList.cs" />
+    <Compile Include="Adapter\AdpPRLListDetail.cs" />
+    <Compile Include="Activities\ActSTLoadTL.cs" />
+    <Compile Include="Activities\ActSTLoadTLStore.cs" />
+    <Compile Include="Adapter\AdpSTLoadList.cs" />
+    <Compile Include="Adapter\AdpSTLoadListDetail.cs" />
+    <Compile Include="Activities\ActSTLoadTLBox.cs" />
+    <Compile Include="Adapter\AdpSTLoadTLBox.cs" />
+    <Compile Include="Adapter\AdpLoading.cs" />
+    <Compile Include="Activities\ActLoadingDetail.cs" />
+    <Compile Include="Activities\ActLoading.cs" />
+    <Compile Include="Adapter\AdpLoadingDetail.cs" />
+    <Compile Include="Adapter\AdpLoadingST.cs" />
+    <Compile Include="Adapter\AdpLoadingSTDetail.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\action_menu.png" />
+    <AndroidResource Include="Resources\drawable\searchbutton.png" />
+    <AndroidResource Include="Resources\drawable\TextBorder.xml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\LayRPoLists.axml" />
+    <AndroidResource Include="Resources\drawable\ButtonStyle.xml" />
+    <AndroidResource Include="Resources\drawable\EditableTextStyle.xml" />
+    <AndroidResource Include="Resources\drawable\EditTextStyle.xml" />
+    <AndroidResource Include="Resources\layout\LayRPoScanList.axml" />
+    <AndroidResource Include="Resources\layout\LayRPoUpc.axml" />
+    <AndroidResource Include="Resources\drawable\passwordloginbutton.png" />
+    <AndroidResource Include="Resources\drawable\userloginbutton.png" />
+    <AndroidResource Include="Resources\layout\LayLogin.axml" />
+    <AndroidResource Include="Resources\layout\LayStart.axml" />
+    <AndroidResource Include="Resources\layout\LayLeftDrawer.axml" />
+    <AndroidResource Include="Resources\layout\LayRPoListC.axml" />
+    <AndroidResource Include="Resources\layout\LayRPoList.axml" />
+    <AndroidResource Include="Resources\drawable\warning.ico" />
+    <AndroidResource Include="Resources\layout\LayInputURL.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLList.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLListC.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLLists.axml" />
+    <AndroidResource Include="Resources\drawable\TextBorderBotton.axml" />
+    <AndroidResource Include="Resources\drawable\TextSmall.axml" />
+    <AndroidResource Include="Resources\layout\LayPBox.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLScanList.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLScanLists.axml" />
+    <AndroidResource Include="Resources\layout\LayPTLUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayLBoxScanList.axml" />
+    <AndroidResource Include="Resources\layout\LayLBoxScanLists.axml" />
+    <AndroidResource Include="Resources\layout\LayLboxList.axml" />
+    <AndroidResource Include="Resources\layout\LayLBoxListC.axml" />
+    <AndroidResource Include="Resources\layout\LayLBoxLists.axml" />
+    <AndroidResource Include="Resources\layout\LayInputDATE.axml" />
+    <AndroidResource Include="Resources\drawable\date.png" />
+    <AndroidResource Include="Resources\drawable\shop.png" />
+    <AndroidResource Include="Resources\drawable\TextBorderCurve.axml" />
+    <AndroidResource Include="Resources\drawable\btnminus.png" />
+    <AndroidResource Include="Resources\drawable\refresh.png" />
+    <AndroidResource Include="Resources\layout\LayBoxInfo.axml" />
+    <AndroidResource Include="Resources\layout\LayRPoScanLists.axml" />
+    <AndroidResource Include="Resources\layout\LayLBStoreList.axml" />
+    <AndroidResource Include="Resources\layout\LayLBStoreLists.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTList.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTListC.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTLists.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTScanList.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTScanLists.axml" />
+    <AndroidResource Include="Resources\layout\LayRSTUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTList.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTListC.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTListCs.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTListDetail.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTBox.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLList.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLListC.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLLists.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLListsDetail.axml" />
+    <AndroidResource Include="Resources\layout\LayRRLListsDetails.axml" />
+    <AndroidResource Include="Resources\layout\LayPSTListDetails.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLList.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLListC.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLListCs.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLListDetail.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLListDetails.axml" />
+    <AndroidResource Include="Resources\layout\LayPRLUpc.axml" />
+    <AndroidResource Include="Resources\drawable\LogoReceiving.png" />
+    <AndroidResource Include="Resources\drawable\LogoPicking.png" />
+    <AndroidResource Include="Resources\drawable\LogoLoading.png" />
+    <AndroidResource Include="Resources\drawable\LogoStockTransferPicking.png" />
+    <AndroidResource Include="Resources\drawable\LogoStockTransferReceiving.png" />
+    <AndroidResource Include="Resources\drawable\LogoLogOut.png" />
+    <AndroidResource Include="Resources\drawable\LogoUser.png" />
+    <AndroidResource Include="Resources\drawable\LogoDebenhamsMenu.jpg" />
+    <AndroidResource Include="Resources\layout\LayDisplayListEmpty.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadBox.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadBoxDetail.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadList.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadLists.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadListsDetail.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadTL.axml" />
+    <AndroidResource Include="Resources\layout\LaySTLoadTLDetail.axml" />
+    <AndroidResource Include="Resources\drawable\debenhams.jpg" />
+    <AndroidResource Include="Resources\drawable\RSCI_logo.jpg" />
+    <AndroidResource Include="Resources\drawable\RSCI_APP_LOGO.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_STARTING.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_LOGIN.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_ORIGINAL.png" />
+    <AndroidResource Include="Resources\drawable\RSCI_ORIGINAL1.png" />
+    <AndroidResource Include="Resources\layout\LayInputCredential.axml" />
+    <AndroidResource Include="Resources\layout\LayInputUpc.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadingList.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadingMenu.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadingDetail.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadingM.axml" />
+    <AndroidResource Include="Resources\layout\LayLoadingDetailList.axml" />
+    <AndroidResource Include="Resources\drawable\rsciapplogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Models\" />
+    <Folder Include="Activities\" />
+    <Folder Include="Adapter\" />
+    <Folder Include="ApiConnection\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\DebenhamsDB" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>23.1.1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

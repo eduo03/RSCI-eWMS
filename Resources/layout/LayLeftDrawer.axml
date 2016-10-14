@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="fill_parent"
+    android:background="#333333"
+    android:id="@+id/FlyOutMenu">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:background="#333333">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="57.0dp"
+            android:id="@+id/textView1"
+            android:textColor="#ffc1c1c1"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:background="@drawable/rsci_original1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout2">
+                <TableRow
+                    android:id="@+id/tableRow4">
+                    <TextView
+                        android:text=" Piler Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="143.5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuPilerName"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/logouser"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text=" Receiving"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="159.5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuReceiving"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:paddingLeft="4dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@drawable/logoreceiving" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text=" Picking"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="175.0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuPicking"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:drawableLeft="@drawable/logopicking"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text=" Loading"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="185.5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuLoad"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:drawableLeft="@drawable/logoloading"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout1">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="  SubLoc Transfer"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuPicking1"
+                    android:textColor="#ffc1c1c1"
+                    android:padding="4dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2">
+                <TextView
+                    android:text=" Receiving"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="190.5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuReceivingST"
+                    android:textColor="#ffc1c1c1"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/logostocktransferreceiving"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="3dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3">
+                <TextView
+                    android:text=" Picking"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuPickingST"
+                    android:textColor="#ffc1c1c1"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/logostocktransferpicking"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="3dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:text=" Loading"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuLoadingST"
+                    android:textColor="#ffc1c1c1"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/logoloading"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="3dp" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout1">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <TextView
+                    android:text="  Return To WareHouse"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuPicking2"
+                    android:textColor="#ffc1c1c1"
+                    android:padding="4dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:text=" Receiving"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MenuReceivingRL"
+                    android:textColor="#ffc1c1c1"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/logostocktransferreceiving"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="4dp">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text=" Log out"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="178.5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MenuLogout"
+                        android:textColor="#ffc1c1c1"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/logologout"
+                        android:gravity="center_vertical" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:background="#abe4e4e4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

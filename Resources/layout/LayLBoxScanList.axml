@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:id="@+id/FlyOutContent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="#333333" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout1"
+            android:background="#333333">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:text="Loading &gt; Scan Box"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/textView2"
+                    android:gravity="center"
+                    android:textColor="#fff6f6f6"
+                    android:layout_marginLeft="8dp" />
+            </LinearLayout>
+        </FrameLayout>
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/TableLayout1">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <Button
+                    android:text="SCAN BOX"
+                    android:id="@+id/btnScanBox"
+                    android:textSize="18dp"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/ButtonStyle"
+                    android:layout_width="146dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:text="DONE"
+                    android:id="@+id/btnDone"
+                    android:textSize="18dp"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    android:background="@drawable/ButtonStyle"
+                    android:layout_width="146dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp" />
+            </TableRow>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:padding="5dp"
+                android:id="@+id/TableLayout2">
+                <TableRow
+                    android:id="@+id/tableRow1">
+                    <TextView
+                        android:id="@+id/lblTlno"
+                        android:text="Load No :"
+                        android:textSize="18sp"
+                        android:textColor="#ff807979"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="39.5dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:layout_gravity="right" />
+                    <EditText
+                        android:id="@+id/txtLoadno"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/EditTextStyle"
+                        android:editable="false"
+                        android:gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tableRow3">
+                    <TextView
+                        android:id="@+id/lblTlno"
+                        android:text="TL No :"
+                        android:textSize="18sp"
+                        android:textColor="#ff807979"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="39.5dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:layout_gravity="right" />
+                    <EditText
+                        android:id="@+id/txtTl_no"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/EditTextStyle"
+                        android:editable="false"
+                        android:gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tableRow2">
+                    <TextView
+                        android:id="@+id/lbldivision"
+                        android:text="Store :"
+                        android:textSize="18sp"
+                        android:textColor="#ff807979"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="36.5dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_gravity="right"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/txtStoreName"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="215dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/EditTextStyle"
+                        android:editable="false"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/txtScanBox"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_width="0.0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/EditTextStyle" />
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fillViewport="true"
+            android:scrollbars="horizontal|vertical"
+            android:id="@+id/horizontalScrollView1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2">
+                <TableLayout
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:minWidth="25dp"
+                    android:minHeight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tableLayout1">
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_height="280.0dp"
+                        android:id="@+id/tableRow4">
+                        <TextView
+                            android:text="Box Code"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff807979"
+                            android:textStyle="bold"
+                            android:id="@+id/lblQty"
+                            android:paddingLeft="3dp"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:background="@drawable/TextBorder"
+                            android:layout_column="0"
+                            android:paddingRight="3dp" />
+                        <TextView
+                            android:text="Status"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff807979"
+                            android:textStyle="bold"
+                            android:id="@+id/lblQty"
+                            android:paddingLeft="3dp"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:background="@drawable/TextBorder"
+                            android:paddingRight="3dp" />
+                    </TableRow>
+                </TableLayout>
+                <ListView
+                    android:id="@+id/lvBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#FFCC00"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:text="Box Code"
+            android:textColor="#ff807979"
+            android:textStyle="bold"
+            android:id="@+id/lblQty"
+            android:paddingLeft="3dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/TextBorder"
+            android:paddingRight="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

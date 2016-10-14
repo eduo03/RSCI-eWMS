@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fafafa">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:descendantFocusability="blocksDescendants">
+        <TextView
+            android:id="@+id/txttl_no"
+            android:text="MTS"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/TextBorder"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtstore_name"
+            android:text="Location"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/TextBorder" />
+        <TextView
+            android:id="@+id/txtfrom_location"
+            android:text="Location"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/TextBorder" />
+    </LinearLayout>
+</LinearLayout>
